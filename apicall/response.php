@@ -52,7 +52,6 @@ class Response
         $this->contentLength = strlen($responseBody);
         $this->location = $location;
         $this->responseBody = $responseBody;
-		print($this->responseBody);
 
         if ($this->responseBody) {
             $parserFactory = new ResponseParserFactory();
